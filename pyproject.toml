@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "data-engineering-zoomcamp"
+version = "0.1.0"
+description = ""
+authors = ["Wisaroot Lertthaweedech <l.wisaroot@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.group.dev.dependencies]
+black = { version = "*", extras = ["jupyter"] }
+isort = "*"
+ipykernel = "*"
+ruff = "*"
+mypy = "*"
+pandas = "*"
+numpy = "*"
+pgcli = "*"
+jupyter = "*"
+pyarrow = "*"
+SQLAlchemy = "*"
+psycopg2 = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
