@@ -347,3 +347,5 @@ introduction-to-dbt/nyc_yellow_taxi/dbt.duckdb
 
 # submodules
 02-workflow-orchestration/mage-zoomcamp
+
+**/dlt_resources/*.duckdb*

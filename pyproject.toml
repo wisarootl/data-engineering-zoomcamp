@@ -7,7 +7,7 @@ readme = "README.md"
 package-mode = false
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = ">=3.12,<3.13"
 
 [tool.poetry.group.dev.dependencies]
 black = { version = "*", extras = ["jupyter"] }
@@ -22,7 +22,9 @@ jupyter = "*"
 pyarrow = "*"
 SQLAlchemy = "*"
 psycopg2 = "*"
-mage-ai = "*"
+# mage-ai = "*" # conflict with dlt.
+dlt = {version = "*", extras = ["duckdb", "parquet"]}
+parquet = "*"
 
 [build-system]
 requires = ["poetry-core"]
